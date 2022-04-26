@@ -41,5 +41,5 @@ java -jar ./out/java/target/openapi-spring-1.0.jar
 ```
 
 ## アクセス
-- [http://localhost:3000/](http://localhost:3000/){:target="_blank"}
-- [http://localhost:3000/users](http://localhost:3000/users){:target="_blank"}
+- [http://localhost:3000/](http://localhost:3000/)
+- [http://localhost:3000/users](http://localhost:3000/users)
