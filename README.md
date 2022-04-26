@@ -1,10 +1,11 @@
-# ABOUT THIS REPOSITORY
+q# ABOUT THIS REPOSITORY
 Stoplight や OpenAPI Generator を確認・検証するためのリポジトリです。
 
 ## 完成形の構成例
 ```
 .
 ├── README.md
+├── config.yaml
 ├── openapi.yaml
 └── out
   └── java
@@ -101,7 +102,8 @@ docker pull openapitools/openapi-generator-cli
 docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
   -i /local/openapi.yaml \
   -g spring \
-  -o /local/out/java
+  -o /local/out/java \
+  -c /local/config.yaml
 ```
 
 ## Maven ビルド
