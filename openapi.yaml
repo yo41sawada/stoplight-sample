@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: wadayoshi sapmle
+  version: '1.0'
+  description: Stoplight との連携確認用
+  contact:
+    url: 'https://example.com/'
+    email: yoshihisa.wada@yo41sawada.digital
+    name: none
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /users:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+      operationId: get-users
+      description: ユーザーの一覧を返す。
+components:
+  schemas:
+    User:
+      title: User
+      type: object
+      properties:
+        id:
+          type: integer
+        first_name:
+          type: string
+        last_name:
+          type: string
+      required:
+        - first_name
+        - last_name
