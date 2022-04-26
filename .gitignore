@@ -1,1 +1,2 @@
-./out/java/target
+out/java/target/
+.DS_Store
