@@ -1,6 +1,81 @@
 # ABOUT THIS REPOSITORY
 Stoplight や OpenAPI Generator を確認・検証するためのリポジトリです。
 
+## 完成形の構成例
+```
+.
+├── README.md
+├── openapi.yaml
+└── out
+  └── java
+    ├── README.md
+    ├── pom.xml
+    ├── src
+    │  ├── main
+    │  │  ├── java
+    │  │  │  └── org
+    │  │  │    └── openapitools
+    │  │  │      ├── OpenApiGeneratorApplication.java
+    │  │  │      ├── RFC3339DateFormat.java
+    │  │  │      ├── api
+    │  │  │      │  ├── ApiUtil.java
+    │  │  │      │  ├── UsersApi.java
+    │  │  │      │  └── UsersApiController.java
+    │  │  │      ├── configuration
+    │  │  │      │  └── HomeController.java
+    │  │  │      └── model
+    │  │  │        └── User.java
+    │  │  └── resources
+    │  │    ├── application.properties
+    │  │    └── openapi.yaml
+    │  └── test
+    │    └── java
+    │      └── org
+    │        └── openapitools
+    │          └── OpenApiGeneratorApplicationTests.java
+    └── target
+      ├── classes
+      │  ├── application.properties
+      │  ├── openapi.yaml
+      │  └── org
+      │    └── openapitools
+      │      ├── OpenApiGeneratorApplication.class
+      │      ├── RFC3339DateFormat.class
+      │      ├── api
+      │      │  ├── ApiUtil.class
+      │      │  ├── UsersApi.class
+      │      │  └── UsersApiController.class
+      │      ├── configuration
+      │      │  └── HomeController.class
+      │      └── model
+      │        └── User.class
+      ├── generated-sources
+      │  └── annotations
+      ├── generated-test-sources
+      │  └── test-annotations
+      ├── maven-archiver
+      │  └── pom.properties
+      ├── maven-status
+      │  └── maven-compiler-plugin
+      │    ├── compile
+      │    │  └── default-compile
+      │    │    ├── createdFiles.lst
+      │    │    └── inputFiles.lst
+      │    └── testCompile
+      │      └── default-testCompile
+      │        ├── createdFiles.lst
+      │        └── inputFiles.lst
+      ├── openapi-spring-1.0.jar
+      ├── openapi-spring-1.0.jar.original
+      ├── surefire-reports
+      │  ├── TEST-org.openapitools.OpenApiGeneratorApplicationTests.xml
+      │  └── org.openapitools.OpenApiGeneratorApplicationTests.txt
+      └── test-classes
+        └── org
+          └── openapitools
+            └── OpenApiGeneratorApplicationTests.class
+```
+
 # 準備
 ## インストール
 - Git
