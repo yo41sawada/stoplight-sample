@@ -1,4 +1,4 @@
-q# ABOUT THIS REPOSITORY
+# ABOUT THIS REPOSITORY
 Stoplight や OpenAPI Generator を確認・検証するためのリポジトリです。
 
 ## 完成形の構成例
