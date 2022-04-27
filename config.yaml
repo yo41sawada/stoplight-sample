@@ -1,6 +1,11 @@
 additionalProperties:
+  groupId: org.openapitools
   artifactDescription: OpenAPI Java
   artifactId: openapi-spring
   artifactUrl: 'https://github.com/yo41sawada/stoplight-sample/tree/main/out/java'
   artifactVersion: 1.0.0
-  groupId: org.openapitools
+  apipackage: org.openapitools.api
+  basePackage: org.openapitools
+  invokerPackage: org.openapitools.api
+  modelpackage: org.openapitools.model
+  configPackage: org.openapitools.configuration
